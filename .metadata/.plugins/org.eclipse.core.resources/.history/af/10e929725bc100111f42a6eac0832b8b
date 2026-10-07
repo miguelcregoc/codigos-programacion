@@ -1,0 +1,21 @@
+package intro;
+
+import java.util.Scanner;
+
+public class MetodosEstaticos {
+
+	public static double KmMillas(double km) {
+		double milla;
+		milla = km/1.60934;
+		return milla;
+	}
+	public static void main(String[] args) {
+		Scanner buscaminas = new Scanner(System.in);
+		System.out.println("Km a convertir: ");
+		double km = buscaminas.nextDouble();
+		
+		System.out.println("En millas son: "+KmMillas(km));
+		buscaminas.close();
+		
+	}
+}

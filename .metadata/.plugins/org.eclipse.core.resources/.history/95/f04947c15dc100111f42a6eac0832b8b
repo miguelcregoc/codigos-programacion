@@ -1,0 +1,48 @@
+package intro;
+
+import java.util.Scanner;
+
+public class DolaresEur {
+
+	public static double EurDol(double eur) {
+		double dol = 0;
+		dol = dol/1.12;
+		return dol;
+	}
+	public static double DolEur(double dol) {
+		double eur = 0;
+		eur = eur*1.12;
+		return eur;
+	}
+	public static void main(String[] args) {
+		
+		Scanner buscaminas = new Scanner(System.in);
+		System.out.println("Euro-Dolar(0) Dolar-Euro(1) o Salir (2)?");
+		int pregunta, eur, dol; 
+		do {
+			pregunta = buscaminas.nextInt();
+			switch(pregunta){
+			case 0: 
+				System.out.println("Dame los Euros: ");
+				eur = buscaminas.nextInt();
+				System.out.println("En Dolars: "+EurDol(eur));
+				break;
+			case 1:
+				System.out.println("Dame los Dolars: ");
+				dol = buscaminas.nextInt();
+				System.out.println("En Euros: "+DolEur(dol));
+				break;
+			case 2:
+				System.out.println("Chao");
+				break;
+			default: System.out.println("numero no valido, intentalo de nuevo");
+			}
+			
+			
+			
+		} while(pregunta!=2);
+
+		buscaminas.close();
+		
+	}
+}

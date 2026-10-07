@@ -1,0 +1,22 @@
+package ejercicios1;
+
+import java.util.Scanner;
+
+public class SegundosConWhile {
+	
+public static void main(String[] args) {
+	
+	Scanner buscaminas = new Scanner(System.in);
+	System.out.println("Dame un tiempo en segundos: ");
+	int tiempo = buscaminas.nextInt();
+	int min=0, h=0;
+	while(tiempo>=60) {
+		min++;
+		tiempo=tiempo-60;
+		}while(min>=60) {
+		h++;
+		min=min-60;
+		}
+		System.out.println(h + "h, " + min + "min, " + tiempo + "s");
+	}
+}

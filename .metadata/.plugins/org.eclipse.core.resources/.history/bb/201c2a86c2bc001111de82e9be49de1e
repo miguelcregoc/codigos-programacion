@@ -1,0 +1,19 @@
+package ejercicios1;
+
+import java.util.Scanner;
+
+public class Propuesto11 {
+
+	/*Realiza un programa con una variable entera t la cual contiene un tiempo en segundos y queremos conocer este
+tiempo pero expresado en horas, minutos y segundos.*/
+	public static void main(String[] args) {
+		Scanner buscaminas=new Scanner();
+		int tiempo = buscaminas.nextInt();
+		//necesito un cociente entero
+		int minutos = tiempo/60;
+		int horas = (tiempo%60)/minutos;
+		int seg = minutos%60;
+		System.out.println(tiempo+"s = "+horas+"h, "+minutos+"min, "+seg+"s");
+		buscaminas.close();
+	}
+}

@@ -1,0 +1,28 @@
+package paquete;
+
+import java.util.Scanner;
+
+public class Ejemplo5 {
+
+	// dame los n primeros multiplos de 2
+	public static void main(String[] args) {
+		System.out.println("Dame un numero:  ");
+		Scanner buscaminasM = new Scanner(System.in);
+		int m = buscaminasM.nextInt();
+		
+		System.out.println("Cuantos multiplos de "+m+" quieres? ");
+		Scanner buscaminasN = new Scanner(System.in);
+		int n = buscaminasN.nextInt();
+		
+		// i variable contador
+		//n numero de veces q se repite el bucle
+		for (int i = 0; i<n; i++) {
+
+			System.out.println(i + "	multplo de 2: " + m*i);
+
+		}
+		buscaminasM.close();
+		buscaminasN.close();
+	}
+
+}

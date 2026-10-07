@@ -1,0 +1,16 @@
+package ejercicios1;
+
+import java.math.BigInteger;
+
+public class GranosDeTrigo {
+	public static void main(String[] args) {
+		BigInteger grano=new BigInteger("0");
+		BigInteger n=new BigInteger("2");
+		
+		for (int i=0; i<=64;i++) {
+			grano=n.pow(i);
+			System.out.println(grano);
+			
+		}	
+	}
+}

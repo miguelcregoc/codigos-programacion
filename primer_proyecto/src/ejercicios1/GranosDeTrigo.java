@@ -13,7 +13,7 @@ public class GranosDeTrigo {
 			m=n.pow(i);
 			grano=m.add(grano);
 			System.out.println(grano);
-			
+			//prueba para gitHub
 		}	
 	}
 }

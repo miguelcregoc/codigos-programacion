@@ -1,6 +1,6 @@
 package ejercicios;
 
-public class Test2 {
+public class TestCoche2 {
 	public static void main(String[] args) {
 		Coche azul = new Coche();
 		System.out.println(azul);

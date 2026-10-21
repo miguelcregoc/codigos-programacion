@@ -46,6 +46,6 @@ main y comprueba los distintos métodos.
 	public int calcCuadrubple() {
 		return this.numero*4;
 	}
-		String to string //algo asi falta de propuesto 2
+		//String to string //algo asi falta de propuesto 2
 	
 }

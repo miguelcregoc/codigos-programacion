@@ -13,21 +13,25 @@ public class DecimalToRomano {
 			while (num >= decimales[i]) {
 				res += romanos[i];
 				num -= decimales[i];
-			}//while
-		}//for
+			} //while
+		} //for
 		//System.out.println(num);
 		return res;
 	}
-	
 	
 	public static void main(String[] args) {
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Dame un numero: ");
 		int num = sc.nextInt();
-
-		System.out.println(decimalARomano(num));
-		
 		sc.close();
+		
+		if(num > 4000 || num < 1) {
+			throw new IllegalArgumentException("Numero fuera de rango");
+		} else {
+		System.out.println(decimalARomano(num));
+		}
+		
+		
 	}
 }

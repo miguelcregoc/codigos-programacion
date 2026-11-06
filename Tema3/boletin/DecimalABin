@@ -1,0 +1,25 @@
+package boletin;
+
+public class DecimalToBinario {
+
+	public static int PasarABin(int num) {
+		while (num > 0) {
+			int aux = num % 2;
+			num /= 2;
+			
+			
+		}
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		int num, aux, resto;
+        String bin;
+        String opcion;
+
+        do{
+            
+        }while (opcion.toUpperCase.ecua);
+	}
+}

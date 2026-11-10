@@ -12,12 +12,13 @@ public class EjercicioIMC {
 //	Luego, a partir del IMC obtenido se pueden calcular si una persona tiene un peso normal, inferior o superior al 
 //	normal u obesidad. Para generar estos resultados el IMC calculado debe estar en los rangos de la tabla 
 //	< 16		Delgadez severa
-//	[25-30)		Sobrepeso
 //	[16-17)		Delgadez moderada	
+//	[17-18.5)	Delgadez leve
+//	[18.5-25)	Peso normal
+//	[25-30)		Sobrepeso
 //	[30-35)		Obesidad leve	
-//	[17-18.5)	Delgadez leve	
 //	[35-40)		Obesidad moderada
-//	[18.5-25)	Peso normal	
+
 //	>=40		Obesidad mórbida
 
 
@@ -35,9 +36,27 @@ public class EjercicioIMC {
 		estatura = sc.nextDouble();
 		
 		imc = calcIMC(peso, estatura);
+		System.out.println(imc);
 		
+		if (imc < 16)
+			System.out.println("Delgadez severa");
+		else if (imc < 17)
+			System.out.println("Delgadez moderada");
+		else if (imc < 18.5)
+			System.out.println("Delgadez leve");
+		else if (imc < 25)
+			System.out.println("Peso normal");
+		else if (imc < 30)
+			System.out.println("Sobrepeso");
+		else if (imc < 35)
+			System.out.println("Obesidad leve");
+		else if (imc < 40)
+			System.out.println("Obesidad moderada");
+		else if (imc >= 40)
+			System.out.println("Obesidad morbida");
 		
+		System.out.println("=========================");
 		
+		sc.close();
 	}
-	
 }

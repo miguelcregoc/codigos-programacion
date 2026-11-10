@@ -37,5 +37,7 @@ public class DecToBin {
 
 		} while (!opcion.toUpperCase().equals("N")); // hasta que mayusculas(N)
 		System.out.println("Fin de programa");
+		
+		sc.close();
 	}
 }

@@ -1,5 +1,7 @@
 package bibliotecaMetodos;
 
+import java.math.BigInteger;
+
 public class Metodos {
 
 	public static boolean esPrimo(int num) {
@@ -101,6 +103,16 @@ public class Metodos {
 		}
 		
 		return x;
+	}
+	
+	public static BigInteger factorial(int num) { //la signatura del metodo indica que entra una variable int y retorna un objeto BigInteger
+		if (num <= 0) //si el num introducido es 0 o negativo
+			throw new IllegalArgumentException("En el factorial el numero introducido es negativo o 0"); //saca una excepcion
+		if (num == 1) //si el num es 1, condicion de escape
+			return BigInteger.ONE; //retorna uno en en el objeto y acaba la recursividad porque el metodo no se llama mas.
+		else // si no
+			return BigInteger.valueOf(num).multiply(factorial(num-1)); //return num * factorial(num-1);
+		//retorna el num y se multiplica por (se hace una llamada al mismo metodo factorial y se le resta uno)
 	}
 
 

@@ -10,7 +10,7 @@ public class NumPerfecto {
 				if (num%i == 0)
 					suma += i;
 			}
-			return (suma == num) ? true : false;
+			return suma == num;
 		}
 
 		public static void main(String[] args) {
